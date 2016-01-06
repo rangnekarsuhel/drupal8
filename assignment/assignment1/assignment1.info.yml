@@ -1,0 +1,5 @@
+name: 'Assignment 1'
+type: module
+description: 'This module contain all Assignments for Drupal 8.'
+package: 'Assignments modules'
+core: 8.x
