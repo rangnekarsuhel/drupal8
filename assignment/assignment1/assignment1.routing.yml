@@ -1,0 +1,20 @@
+assignment1_form:
+  path: '/assignment1'
+  defaults:
+    _title: 'Assignment 1'
+    _form: '\Drupal\assignment1\Form\Assignment1'
+  requirements:
+    _permission: 'access content'
+assignment1_thankyou:
+  path: '/assignment1/thankyou/{name}'
+  defaults:
+    _controller: '\Drupal\assignment1\Controller\Assignment1ThankYou::thankYou'
+  requirements:
+    _access: 'TRUE'
+configform_assignment1_form:
+  path: '/assignment1/configform_form'
+  defaults:
+    _title: 'Assignment1 Configform form'
+    _form: '\Drupal\assignment1\Form\ConfigFormAssignment1'
+  requirements:
+    _permission: 'access content'
