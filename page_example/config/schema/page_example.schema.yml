@@ -1,0 +1,7 @@
+page_example.settings:
+  type: mapping
+  label: 'Configform Example settings'
+  mapping:
+    email_address:
+      type: string
+      label: 'This is the example email address.'

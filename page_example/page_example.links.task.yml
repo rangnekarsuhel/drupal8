@@ -1,0 +1,16 @@
+page_example.description:
+  title: 'Page Example'
+  route_name: page_example_description
+  base_route: page_example.description
+  weight: 0
+page_example.simple:
+  title: 'Page Example'
+  route_name: page_example_simple
+  parent_id: page_example.description
+  weight: 0
+page_example.form:
+  title: 'Page Example with formt'
+  route_name: page_example_form
+  parent_id: page_example.description
+  weight: 1
+

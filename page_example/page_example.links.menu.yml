@@ -1,0 +1,17 @@
+page_example.simple:
+  title: 'Simple - no arguments'
+  route_name: page_example_simple
+  menu_name: main
+
+page_example.description:
+  title: 'Page Example'
+  route_name: page_example_description
+  menu_name: main
+  weight: 0
+
+page_example.arguments:
+  title: 'Page Example with Argument'
+  route_name: page_example_arguments
+  parent: page_example.description
+  weight: 1
+
