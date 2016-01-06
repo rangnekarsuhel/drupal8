@@ -1,0 +1,21 @@
+configform_example.settings:
+  type: mapping
+  label: 'Configform Example settings'
+mapping:
+  email_address:
+    type: string
+    label: 'This is the example email address.'
+  address:
+    type: mapping
+    label: 'Address'
+    mapping:
+      line_1:
+        type: string
+      city:
+        type: string
+      state:
+        type: string
+      zip:
+        type: integer
+
+
