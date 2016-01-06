@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains \Drupal\block_example\Plugin\Block\ExampleEmptyBlock.
+ */
+
+namespace Drupal\block_example\Plugin\Block;
+use Drupal\Core\Block\BlockBase;
+
+/**
+ * Provides a 'Example: empty block' block.
+ *
+ * @Block(
+ *   id = "example_empty",
+ *   admin_label = @Translation("Example: empty block")
+ * )
+ */
+class ExampleEmptyBlock extends BlockBase {
+
+
+
+  /**
+   * {@inheritdoc}
+   */
+  public function build() {
+    $form = \Drupal::formBuilder()->getForm('\Drupal\page_example\Form\PageExampleForm');
+   //var_dump($form);
+   //exit();
+   return $form;
+   /*
+    return [
+      '#type' => 'markup',
+      '#markup' => $form,
+    ];*/
+
+  }
+
+}

@@ -1,0 +1,5 @@
+name: 'Block example'
+type: module
+description: 'Block Example'
+package: 'Example modules'
+core: 8.x
