@@ -1,0 +1,5 @@
+name: nse_stockapi
+type: module
+description: 'Retrieve stock information from National Stock Exchange of India.'
+package: Stock
+core: 8.x

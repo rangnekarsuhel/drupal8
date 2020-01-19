@@ -1,0 +1,7 @@
+nse_stockapi.page:
+  path: /nse-stock
+  defaults:
+    _title: 'NSE Stock'
+    _controller: '\Drupal\nse_stockapi\Controller\NseStockApiController::nse_stockapi_page'
+  requirements:
+    _permission: 'access content'
