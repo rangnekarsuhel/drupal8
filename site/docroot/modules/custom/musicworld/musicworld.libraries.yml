@@ -1,0 +1,9 @@
+musicworld:
+  version: 1.x
+  css:
+    layout:
+      css/musicworld.css: {}
+  js:
+    ## js/musicworld.js: {}
+  dependencies:
+    - core/jquery

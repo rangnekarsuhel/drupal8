@@ -1,0 +1,30 @@
+uuid: dbd423b9-8e95-48f1-9fdc-4e8c6874e627
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.track
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__track_block_latest_music_home
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:track-block_latest_music_home'
+settings:
+  id: 'views_block:track-block_latest_music_home'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

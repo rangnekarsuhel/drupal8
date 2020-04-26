@@ -1,0 +1,15 @@
+## YAML Template.
+## musicworld.album:
+##    title: 'Music Album'
+##    description: 'link for Music Album'
+##    route_name: musicworld.album_content
+##    weight: 10
+##    menu_name: main
+##musicworld.topalbum:
+##    title: 'Music Album'
+##    description: 'link for Music Album'
+##    route_name: musicworld.topalbum
+##    parent: musicworld.album
+##    menu_name: main
+##    weight: 10 
+

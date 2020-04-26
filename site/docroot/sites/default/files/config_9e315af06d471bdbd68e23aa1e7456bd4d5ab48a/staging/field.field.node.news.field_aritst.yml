@@ -1,0 +1,28 @@
+uuid: 134f01f0-d5fd-4fe0-a0cd-7a68177ab660
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aritst
+    - node.type.artist
+    - node.type.news
+id: node.news.field_aritst
+field_name: field_aritst
+entity_type: node
+bundle: news
+label: Aritst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      artist: artist
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

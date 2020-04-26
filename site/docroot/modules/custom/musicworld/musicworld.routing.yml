@@ -1,0 +1,15 @@
+musicworld.album_content:
+  path: '/albums_listing'
+  defaults:
+    _controller: '\Drupal\musicworld\Controller\MusicWorldAlbum::album'
+    _title: 'Music Album'
+  requirements:
+    _permission: 'access content'
+    
+musicworld.top_album:
+  path: '/topalbum'
+  defaults:
+    _controller: '\Drupal\musicworld\Controller\MusicWorldAlbum::topalbum'
+    _title: 'Top Music Album'
+  requirements:
+    _permission: 'access content'

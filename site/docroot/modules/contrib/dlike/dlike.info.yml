@@ -1,0 +1,13 @@
+name : Drupal Like
+type: module
+description : "Implements facebook like 'Like' functionality using flag module"
+# core : 8.x
+dependencies:
+  - flag
+  - token
+
+# Information added by Drupal.org packaging script on 2017-02-09
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'dlike'
+datestamp: 1486639086

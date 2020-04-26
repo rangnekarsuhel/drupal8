@@ -1,0 +1,59 @@
+<?php
+
+function musicworld_search_page_attachments(array &$attachments) {
+	$attachments['#attached']['library'][] = 'musicworld_search/musicworld-search';
+}
+
+function musicworld_search_form_alter(&$form, $form_state, $form_id) {
+  
+		$fid = $form['#id'];
+    if ($fid == "views-exposed-form-track-search-music-page") {
+			$artist_opts = musicworld_load_entity_field_name('artist', 'title');
+      $album_opts = musicworld_load_entity_field_name('album', 'title');
+      $form['cfield-artist-id'] = array(
+				'#type' => 'select',
+				'#title' => t('Artists'),
+        '#empty_option' => t('All Artist'),
+				'#options' => $artist_opts,
+				'#weight' => 2,
+			);
+       $form['cfield-album-id'] = array(
+				'#type' => 'select',
+				'#title' => t('Album'),
+        '#empty_option' => t('All Album'),
+				'#options' => $album_opts,
+				'#weight' => 3,
+			);
+      $form['cfield-keyword'] = array(
+				'#type' => 'search',
+        '#default_value' => '',
+				'#title' => t('keyword Search'),
+        '#maxlength' => 128,
+        '#size' => 15,
+				'#weight' => 1,
+        '#prefix' => '<div class="search-container-inline">',
+			);
+      $form['submit-track']['#suffix'] = '</div>';
+		}
+}
+
+function musicworld_load_entity_field_name($type, $field) {
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', $type)
+    ->execute();
+  $nodes = \Drupal::entityTypeManager()
+    ->getStorage('node')
+    ->loadMultiple($nids);
+  $opts = array();
+	foreach($nodes as $node) {
+		$opts[$node->id()] = $node->get($field)->value;
+	}
+	return $opts;
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function musicworld_search_views_pre_render(\Drupal\views\ViewExecutable $view) {
+  //dsm($view);
+}

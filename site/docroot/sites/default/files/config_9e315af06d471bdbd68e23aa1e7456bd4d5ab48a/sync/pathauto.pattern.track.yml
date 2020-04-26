@@ -1,0 +1,22 @@
+uuid: 0ebaed34-c092-4aeb-ab18-973d4f1d5a0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: track
+label: Track
+type: 'canonical_entities:node'
+pattern: 'track/[node:title]'
+selection_criteria:
+  91f8525c-8bba-49d6-8956-cbebd65e1b37:
+    id: node_type
+    bundles:
+      track: track
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 91f8525c-8bba-49d6-8956-cbebd65e1b37
+selection_logic: and
+weight: -5
+relationships: {  }

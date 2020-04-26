@@ -1,0 +1,18 @@
+uuid: 31340995-c2ad-415a-bc6c-512ff5ffdae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.track
+id: node.track.title
+field_name: title
+entity_type: node
+bundle: track
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Generic styles for musicworld_search.
+ *
+ */
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-aritst-target-id,
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-album-target-id, 
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-sort-by,
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-sort-order,
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-cfield-keyword,
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-artist-title,
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-album-title,
+#sidebar-second #views-exposed-form-track-search-music-page .form-item-track-title {
+    display: none;
+}
+
+#views-exposed-form-track-search-music-page .form-item-cfield-album-id,
+#views-exposed-form-track-search-music-page .form-item-cfield-artist-id {
+    margin-right: 10.5em;
+}
+
+#header .block-views-exposed-filter-blocktrack-search-music-page .form-item-aritst-target-id,
+#header .block-views-exposed-filter-blocktrack-search-music-page .form-item-album-target-id, 
+#header .block-views-exposed-filter-blocktrack-search-music-page .form-item-sort-by,
+#header .block-views-exposed-filter-blocktrack-search-music-page .form-item-sort-order 
+#header #views-exposed-form-track-search-music-page .form-item-cfield-album-id,
+#header #views-exposed-form-track-search-music-page .form-item-cfield-artist-id,
+#header #views-exposed-form-track-search-music-page .form-item-artist-title,
+#header #views-exposed-form-track-search-music-page .form-item-album-title,
+#header #views-exposed-form-track-search-music-page .form-item-track-title,
+#header #views-exposed-form-track-search-music-page .form-item-cfield-keyword label {
+    display: none;
+}
+
+.region-header #views-exposed-form-track-search-music-page .form-item-cfield-album-id,
+.region-header  #views-exposed-form-track-search-music-page .form-item-cfield-artist-id {
+   display: none;   
+}
+
+.region-header .search-container-inline div {
+   display: inline;
+}

@@ -1,0 +1,17 @@
+uuid: b57939c6-faee-485e-a0d3-3a9dddaf37cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Track
+type: track
+description: 'Music song, audio'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

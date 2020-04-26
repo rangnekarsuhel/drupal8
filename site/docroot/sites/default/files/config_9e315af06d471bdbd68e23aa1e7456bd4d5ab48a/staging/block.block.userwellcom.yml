@@ -1,0 +1,31 @@
+uuid: 023656e1-9f9f-4662-ab62-5056e21f0269
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:11d801d4-0899-42b7-a656-3a939b11d22c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: userwellcom
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:11d801d4-0899-42b7-a656-3a939b11d22c'
+settings:
+  id: 'block_content:11d801d4-0899-42b7-a656-3a939b11d22c'
+  label: 'User Wellcom'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

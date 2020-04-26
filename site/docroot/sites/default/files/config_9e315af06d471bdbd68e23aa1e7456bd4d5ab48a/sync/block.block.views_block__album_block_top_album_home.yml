@@ -1,0 +1,30 @@
+uuid: 2496d9dc-940a-467e-8547-ed503c1d7b9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.album
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__album_block_top_album_home
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:album-block_top_album_home'
+settings:
+  id: 'views_block:album-block_top_album_home'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

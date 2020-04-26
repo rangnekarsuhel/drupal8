@@ -1,0 +1,30 @@
+uuid: 455699af-10a9-4795-b0b4-4b423b719be9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.artist
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__artist_block_artist_home
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:artist-block_artist_home'
+settings:
+  id: 'views_block:artist-block_artist_home'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

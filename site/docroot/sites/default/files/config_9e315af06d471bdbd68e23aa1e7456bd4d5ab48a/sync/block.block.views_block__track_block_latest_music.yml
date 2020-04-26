@@ -1,0 +1,30 @@
+uuid: 5de7da63-4626-4653-9191-43e00ab2a041
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.track
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__track_block_latest_music
+theme: bartik
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'views_block:track-block_latest_music'
+settings:
+  id: 'views_block:track-block_latest_music'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/topalbum\r\n/album"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,48 @@
+uuid: 696aaf82-7117-4c38-b56e-aca7b545745f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.carousel.field_album
+    - field.field.node.carousel.field_banner
+    - field.field.node.carousel.field_order
+    - node.type.carousel
+  module:
+    - image
+    - options
+    - user
+id: node.carousel.default
+targetEntityType: node
+bundle: carousel
+mode: default
+content:
+  field_album:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_banner:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_order:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

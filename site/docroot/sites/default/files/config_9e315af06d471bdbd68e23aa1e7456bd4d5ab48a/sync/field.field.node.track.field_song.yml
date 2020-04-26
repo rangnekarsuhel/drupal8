@@ -1,0 +1,21 @@
+uuid: 7dfb853e-d8a7-4ff5-9199-bf19f223e342
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_song
+    - node.type.track
+  module:
+    - youtube
+id: node.track.field_song
+field_name: field_song
+entity_type: node
+bundle: track
+label: Song
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: youtube

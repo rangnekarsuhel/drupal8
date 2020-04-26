@@ -1,0 +1,5 @@
+name: musicworld_search
+type: module
+description: 'Add custom code for search page and filter'
+package: Custom
+core: 8.x

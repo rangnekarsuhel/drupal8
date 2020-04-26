@@ -1,0 +1,30 @@
+uuid: b411b2bb-4f12-4461-b951-dd49c31030ab
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'access user profiles'
+  - 'create blog content'
+  - 'create news content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete blog revisions'
+  - 'delete news revisions'
+  - 'delete own blog content'
+  - 'delete own news content'
+  - 'edit own blog content'
+  - 'edit own comments'
+  - 'edit own news content'
+  - 'edit terms in tags'
+  - 'flag like'
+  - 'revert blog revisions'
+  - 'revert news revisions'
+  - 'unflag like'
+  - 'view blog revisions'
+  - 'view news revisions'
+  - 'view own unpublished content'

@@ -1,0 +1,9 @@
+musicworld-search:
+  version: 1.x
+  css:
+    layout:
+      css/musicworld-search.css: {}
+  js:
+    js/musicworld-search.js: {}
+  dependencies:
+    - core/jquery

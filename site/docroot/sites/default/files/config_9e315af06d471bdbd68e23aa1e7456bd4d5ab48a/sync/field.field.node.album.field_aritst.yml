@@ -1,0 +1,28 @@
+uuid: 0a39b7d3-bab4-4900-abff-8ee18f21543b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aritst
+    - node.type.album
+    - node.type.artist
+id: node.album.field_aritst
+field_name: field_aritst
+entity_type: node
+bundle: album
+label: Aritst
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      artist: artist
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

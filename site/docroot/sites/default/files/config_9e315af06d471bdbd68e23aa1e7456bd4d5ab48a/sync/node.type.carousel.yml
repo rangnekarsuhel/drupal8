@@ -1,0 +1,17 @@
+uuid: 921b4d8c-b6d4-4e9f-8ec2-e9dd177a1e16
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Carousel
+type: carousel
+description: 'Home page carousel'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,191 @@
+uuid: 7fade2a5-2e41-4d71-9656-e24c687b8562
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.album.body
+    - field.field.node.album.field_aritst
+    - field.field.node.album.field_image
+    - field.field.node.album.field_release_day
+    - field.field.node.album.field_tracks
+    - field.field.node.album.layout_builder__layout
+    - image.style.large
+    - node.type.album
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components:
+          241897e5-2de1-4a0d-845f-6e2c908d962a:
+            uuid: 241897e5-2de1-4a0d-845f-6e2c908d962a
+            region: first
+            configuration:
+              id: 'field_block:node:album:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          a412cdf4-6d16-43a5-aac0-1715be9588ed:
+            uuid: a412cdf4-6d16-43a5-aac0-1715be9588ed
+            region: second
+            configuration:
+              id: 'field_block:node:album:body'
+              label: 'Album Description'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          bb7743ef-a66d-4a5d-84a7-002701827707:
+            uuid: bb7743ef-a66d-4a5d-84a7-002701827707
+            region: second
+            configuration:
+              id: 'field_block:node:album:field_release_day'
+              label: 'Release Day'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: datetime_default
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          2340811f-5cc2-46c1-94c5-62142d86cf04:
+            uuid: 2340811f-5cc2-46c1-94c5-62142d86cf04
+            region: second
+            configuration:
+              id: 'field_block:node:album:field_aritst'
+              label: Aritst
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          cb4b25ca-eb4d-4e99-902e-c4bce9ebb7af:
+            uuid: cb4b25ca-eb4d-4e99-902e-c4bce9ebb7af
+            region: second
+            configuration:
+              id: 'field_block:node:album:field_tracks'
+              label: Tracks
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          6a4f669c-4003-408c-8f6f-537896964e61:
+            uuid: 6a4f669c-4003-408c-8f6f-537896964e61
+            region: second
+            configuration:
+              id: 'extra_field_block:node:album:flag_like'
+              label: 'Flag: <em class="placeholder">like</em>'
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+id: node.album.default
+targetEntityType: node
+bundle: album
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_aritst:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_release_day:
+    weight: 4
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_tracks:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  flag_like:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

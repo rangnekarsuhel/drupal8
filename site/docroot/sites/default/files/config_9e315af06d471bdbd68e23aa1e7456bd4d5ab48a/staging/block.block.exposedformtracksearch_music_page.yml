@@ -1,0 +1,29 @@
+uuid: ceaf6917-a11e-4465-a029-5df3e8a3fd4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.track
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: exposedformtracksearch_music_page
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_exposed_filter_block:track-search_music_page'
+settings:
+  id: 'views_exposed_filter_block:track-search_music_page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/searchmusic\r\n/search/node"
+    negate: false
+    context_mapping: {  }

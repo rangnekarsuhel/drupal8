@@ -1,0 +1,7 @@
+name: musicworld
+type: module
+description: 'Add custom code MusicWorld'
+package: Custom
+core: 8.x
+dependencies:
+  - block

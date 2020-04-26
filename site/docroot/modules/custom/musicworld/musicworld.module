@@ -1,0 +1,5 @@
+<?php
+
+function musicworld_page_attachments(array &$attachments) {
+	$attachments['#attached']['library'][] = 'musicworld/musicworld';
+}

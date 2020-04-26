@@ -1,0 +1,21 @@
+uuid: feb29cf4-faa7-41bf-b922-3e67ee48713c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.carousel
+  module:
+    - options
+id: node.carousel.field_order
+field_name: field_order
+entity_type: node
+bundle: carousel
+label: Order
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

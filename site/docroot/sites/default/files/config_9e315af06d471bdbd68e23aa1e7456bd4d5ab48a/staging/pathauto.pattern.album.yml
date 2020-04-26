@@ -1,0 +1,22 @@
+uuid: 4ee4d324-185f-465d-9087-7efc2f26f007
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: album
+label: Album
+type: 'canonical_entities:node'
+pattern: 'album/[node:title]'
+selection_criteria:
+  2403b7d1-bcb2-4ff2-a085-91d2c6cf5891:
+    id: node_type
+    bundles:
+      album: album
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2403b7d1-bcb2-4ff2-a085-91d2c6cf5891
+selection_logic: and
+weight: -5
+relationships: {  }

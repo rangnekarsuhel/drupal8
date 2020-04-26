@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Generic styles for musicworld_search.
+ *
+ */
+.path-contact #block-bartik-content{
+    width: 50%;
+    float: left;
+}
+.path-contact #block-location {
+    float: right;
+}

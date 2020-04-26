@@ -1,0 +1,21 @@
+uuid: 04e2b73b-86a7-416a-babf-590df908ddf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - musicworld
+  theme:
+    - bartik
+id: poweredbyblock
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: powered_by_block
+settings:
+  id: powered_by_block
+  label: 'Powered By Block'
+  provider: musicworld
+  label_display: '0'
+  powered_by_settings: null
+visibility: {  }

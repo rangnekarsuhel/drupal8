@@ -1,0 +1,29 @@
+uuid: 50659fdd-203c-44c9-a5c3-f69a50e7eec2
+langcode: en
+status: true
+dependencies: {  }
+id: like
+label: like
+bundles:
+  - album
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Rating [flagcount:count]'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Rating [flagcount:count]'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    token: token
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

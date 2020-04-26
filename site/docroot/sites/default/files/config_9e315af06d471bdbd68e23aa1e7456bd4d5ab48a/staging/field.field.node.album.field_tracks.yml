@@ -1,0 +1,28 @@
+uuid: a638797f-b55a-4911-8d5f-ca23540fe83e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tracks
+    - node.type.album
+    - node.type.track
+id: node.album.field_tracks
+field_name: field_tracks
+entity_type: node
+bundle: album
+label: Tracks
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      track: track
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

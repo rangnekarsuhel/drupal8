@@ -1,0 +1,14 @@
+uuid: a899577c-3d8a-4c42-8a6b-c597b34e12a5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - rangnekar.suhel@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

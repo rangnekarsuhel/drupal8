@@ -1,0 +1,30 @@
+uuid: 1626eb74-5f80-47ed-9db3-e6a15376796d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.carousel
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__carousel_block_carousel_home
+theme: bartik
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:carousel-block_carousel_home'
+settings:
+  id: 'views_block:carousel-block_carousel_home'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

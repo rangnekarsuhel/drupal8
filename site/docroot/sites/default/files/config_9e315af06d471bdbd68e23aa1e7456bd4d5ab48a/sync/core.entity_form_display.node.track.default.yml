@@ -1,0 +1,47 @@
+uuid: 4b5cc4d0-bad6-48f3-a9a9-eb9dd4bea578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.track.body
+    - field.field.node.track.field_song
+    - node.type.track
+  module:
+    - text
+    - youtube
+id: node.track.default
+targetEntityType: node
+bundle: track
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_song:
+    weight: 1
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+    type: youtube
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

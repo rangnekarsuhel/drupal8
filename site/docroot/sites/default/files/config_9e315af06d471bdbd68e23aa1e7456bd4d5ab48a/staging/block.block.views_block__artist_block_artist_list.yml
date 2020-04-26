@@ -1,0 +1,30 @@
+uuid: 89776770-ec38-45e8-8645-2a3a1e401e87
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.artist
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__artist_block_artist_list
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:artist-block_artist_list'
+settings:
+  id: 'views_block:artist-block_artist_list'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /topalbum
+    negate: false
+    context_mapping: {  }
