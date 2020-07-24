@@ -1,0 +1,4 @@
+services:
+  nse_stockapi.stock_fetch_data:
+    class: Drupal\nse_stockapi\ServiceStockFetchData
+    arguments: []

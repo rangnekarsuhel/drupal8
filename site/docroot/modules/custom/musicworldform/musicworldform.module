@@ -1,10 +1,6 @@
 <?php
 
-function musicworld_page_attachments(array &$attachments) {
-	$attachments['#attached']['library'][] = 'musicworld/musicworld';
-}
-
-function musicworldalbum_load_entity_field_name($type, $field) {
+function musicworldform_load_entity_field_name($type, $field) {
   $nids = \Drupal::entityQuery('node')
     ->condition('type', $type)
     ->execute();

@@ -1,0 +1,5 @@
+album.getdetails:
+  title: 'Album Form Details'
+  description: 'Page display album form request data.'
+  route_name: album.getdetails
+  parent: 'system.admin_config_development'

@@ -1,0 +1,5 @@
+name: musicworldform
+type: module
+description: 'Add custom code for Form in MusicWorld'
+package: Custom
+core: 8.x

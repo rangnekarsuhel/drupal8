@@ -1,0 +1,31 @@
+musicworld.music_form:
+  path: '/music-form'
+  defaults:
+    _form:  '\Drupal\musicworldform\Form\MusicForm'
+    _title: 'Music Form'
+  requirements:
+    _permission: 'access content'
+    
+album.form:
+ path: '/album/album-form'
+ defaults:
+   _title: 'Album Application form'
+   _form: '\Drupal\musicworldform\Form\AlbumForm'
+ requirements:
+   _permission: 'access content'
+ 
+album.thankyou:
+ path: '/album/album-form/thankyou'
+ defaults:
+   _title: 'Thank You Page'
+   _controller: '\Drupal\musicworldform\Controller\MusicWorldAlbumForm::successpage'
+ requirements:
+   _permission: 'access content'
+ 
+album.getdetails:
+ path: '/admin/config/album-forms'
+ defaults:
+   _title: 'Fetch detail of AlbumForm'
+   _controller: '\Drupal\musicworldform\Controller\MusicWorldAlbumForm::getDetails'
+ requirements:
+    _permission: 'administer site configuration'

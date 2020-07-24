@@ -1,0 +1,78 @@
+<?php
+
+function musicworldcarousel_load_entity_field_name($type, $field) {
+  //->condition('field_featured', 1)
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', $type)
+    ->condition('field_featured', 1)
+    ->execute();
+  $nodes = \Drupal::entityTypeManager()
+    ->getStorage('node')
+    ->loadMultiple($nids);
+  $opts = array();
+	foreach($nodes as $node) {
+    $style = \Drupal::entityTypeManager()->getStorage('image_style')->load('medium');
+    $url = $style->buildUrl($node->get($field)->entity->uri->value);
+    $opts[$node->id()] = $url;
+	}
+	return $opts;
+}
+
+/**
+ * Implements hook_libraries_info().
+ */
+function musicworldcarousel_libraries_info() {
+  $libraries['jquery.waltzerjs'] = array(
+    'name' => 'jquery.waltzerjs',
+    'vendor url' => 'http://carmichaelize.github.io/waltzer-js/',
+    'download url' => 'https://github.com/carmichaelize/waltzer-js',
+    'version' => '1.0',
+    'files' => array(
+      'js' => array(
+        'waltzerjs.js',
+      ),
+      'css' => array(
+         'examples/css/styles.css',
+      ),
+    ),
+  );
+  /*$libraries['jquery.slick'] = array(
+    'name' => 'jquery.slick',
+    'vendor url' => 'http://kenwheeler.github.io/slick/',
+    'download url' => 'https://github.com/kenwheeler/slick',
+    'version' => '1.0',
+    'files' => array(
+      'js' => array(
+        'slick.js',
+      ),
+      'css' => array(
+         'slick.css',
+        'slick-theme.css',
+      ),
+    ),
+  );
+  return $libraries;*/
+}
+  
+
+function musicworldcarousel_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'musicworldcarousel/jquery.waltzerjs';
+  //$attachments['#attached']['library'][] = 'musicworldcarousel/jquery.slick';
+  $attachments['#attached']['library'][] = 'musicworldcarousel/musicworldcarousel';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function musicworldcarousel_theme() {
+  return [
+    'slick_carousel' => [
+      'template' => 'slick_carousel',
+      'variables' => ['title' => NULL],
+    ],
+    'waltzerjs_carousel' => [
+      'template' => 'waltzerjs_carousel',
+      'variables' => ['title' => NULL],
+    ],
+  ];
+}

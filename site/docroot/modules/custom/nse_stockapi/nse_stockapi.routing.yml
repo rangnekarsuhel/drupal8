@@ -1,0 +1,14 @@
+nse_stockapi.config:
+  path: '/admin/config/development/nse-stock/config'
+  defaults:
+    _form: '\Drupal\nse_stockapi\Form\NseStockConfigForm'
+    _title: 'NSE Stock Config'
+  requirements:
+    _permission: 'administer site configuration'
+nse_stockapi.page:
+  path: /nse-stock
+  defaults:
+    _title: 'NSE Stock'
+    _controller: '\Drupal\nse_stockapi\Controller\NseStockApiController::nse_stockapi_page'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+services:
+  musicworld.user_service:
+    class: Drupal\musicworld\UserService
+    arguments: ['@current_user']
+  musicworld.user_serviceV1:
+    class: Drupal\musicworld\UserServiceV1
+    arguments: ['@current_user']

@@ -1,0 +1,42 @@
+jquery.waltzerjs:
+  title: jQuery.waltzerjs
+  version: 1.0
+  remote: https://github.com/carmichaelize/waltzer-js
+  license:
+    name: MIT
+    url: https://github.com/carmichaelize/waltzer-js
+    gpl-compatible: true
+  js:
+    /libraries/waltzerjs/waltzerjs.js: {}
+  css:
+    theme:
+      /libraries/waltzerjs/examples/css/styles.css: {}
+  dependencies:
+    - core/jquery
+    
+musicworldcarousel:
+  version: VERSION
+  js:
+    js/musicworldcarousel.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    
+jquery.slick:
+  title: jQuery.slick
+  version: 1.0
+  remote: http://kenwheeler.github.io/slick/
+  license:
+    name: MIT
+    url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/slick/slick.js: {}
+  css:
+    theme:
+      /libraries/slick/slick.css: {}
+      /libraries/slick/slick-theme.css: {}
+  dependencies:
+    - core/jquery
